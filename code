@@ -24,6 +24,8 @@ namespace Lotto
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //버튼 누르면 HashSet clear
+            LottoNums.Clear();
             //무명메서드 호출 하면 GetNum 메서드 실행
             //직접 만든 workThread는 직접 글을 쓸 수 없음
             Thread t1 = new Thread(() => GetNum(tB1));
